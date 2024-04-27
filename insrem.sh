@@ -18,7 +18,7 @@ validate(){
     fi 
 }
 
-if [ userid -ne 0 ]
+if [ $userid -ne 0 ]
 then 
     echo "please run with sudo access"
     exit 13
