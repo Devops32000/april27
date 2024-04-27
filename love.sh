@@ -12,10 +12,10 @@ N="\e[0m"
 valiate(){
     if [ $1 -ne 0 ]
     then 
-        echo "$2...$R Failed $N"
+        echo -e "$2...$R Failed $N"
         exit 11
     else
-        echo "$2...$G Success $N"
+        echo -e "$2...$G Success $N"
     fi 
 }
 
@@ -32,7 +32,7 @@ do
     dnf list installed &>>$logfile
     if [ $? -eq 0 ]
     then
-        echo "$i already installed, hence...$Y SKipping $N"
+        echo -e "$i already installed, hence...$Y SKipping $N"
     else
         dnf install $i &>>$logfile
         validate $? "installing $i"
