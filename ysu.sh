@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ra=tajdbj
-sdvj=javuv
+ra=$1
+sdvj=$2
 
 echo "All variables $@"
