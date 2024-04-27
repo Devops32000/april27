@@ -36,6 +36,8 @@ do
     else
         dnf install $i -y &>>$logfile
         validate $? "installing $i"
+        systemctl start $i &>>$logfile
+        validate $? "Starting &i service"
     fi 
 done 
 
