@@ -6,5 +6,5 @@ sdvj=$2
 echo "All variables $@"
 echo "number of variables passed $#"
 echo "This is the scritp name $0"
-echo "Which user is running the script $user"
+echo "Which user is running the script $USER"
 
