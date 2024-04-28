@@ -1,4 +1,4 @@
-- name: Installa ans run nginx
+- name: Install and run nginx
   hosts: web
   become: yes
   tasks:
