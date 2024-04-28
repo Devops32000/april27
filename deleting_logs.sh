@@ -21,6 +21,6 @@ while IFS=read -r line
 do 
     echo -e "$Y deleting file: $line $N"
     rm -rf $line 
-done >>>$files 
+done >>> $files 
 
 
