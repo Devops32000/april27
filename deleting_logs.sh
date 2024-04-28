@@ -17,7 +17,7 @@ fi
 
 files=$(find $source -name "*.log" -mtime +14)
 
-while IFS=read -r line
+while IFS= read -r line
 do 
     echo -e "$Y deleting file: $line $N"
     rm -rf $line 
